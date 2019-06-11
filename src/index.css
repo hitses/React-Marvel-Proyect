@@ -19,11 +19,11 @@ code {
 .headerDiv{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .headerImg{
   width: 200px;
-  height: auto;
   margin: 25px;
 }
 
@@ -64,16 +64,35 @@ li{
   display:flex;
 }
 
-.toHome{
-  text-decoration: none;
-  font-size: 2rem;
-  color: #FFFFF0;
-  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
-}
-
 /* ///// Index ///// */
 
 /* ///// Characters ///// */
 .characters{
+  margin: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 /* ///// Characters ///// */
+
+/* ///// Character ///// */
+.cardCharacter{
+  margin: 10px;
+}
+
+.characterImg{
+  width: 300px;
+}
+/* ///// Character ///// */
+
+/* ///// Character ///// */
+.detailCharacter{
+  display: flex;
+  justify-content: center;
+}
+.nameCharacter{
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
+}
+/* ///// Character ///// */

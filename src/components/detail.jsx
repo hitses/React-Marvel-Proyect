@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Axios from 'axios';
-import {Link} from 'react-router-dom';
 import {api_url, api_key, api_characters} from '../config';
 
 class Detail extends Component{
@@ -22,11 +21,10 @@ class Detail extends Component{
 
   render(){
     if(this.state.character){
-      return <div>
-        <h1>{this.state.character.name}</h1>
+      return <div className="detailCharacter">
+        <h1 className="nameCharacter">{this.state.character.name}</h1>
         <img src={this.state.character.thumbnail.path + '.jpg'} alt={this.state.character.name}/>
         <p>{this.state.character.description}</p>
-        <Link to = '/characters'>Página principal</Link>
       </div>
     } else{
       return <div>
