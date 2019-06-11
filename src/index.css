@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=BenchNine&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  font-family: 'BenchNine', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ///// Header ///// */
+.headerDiv{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerImg{
+  width: 200px;
+  height: auto;
+  margin: 25px;
+}
+
+.title{
+  margin: 25px 0 0 0;
+  font-size: 4rem;
+  color: #000000;
+  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
+}
+
+.is-active{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  float: left;
+  margin: 41px;
+}
+
+.link{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+}
+/* ///// Header ///// */ 
+
+/* ///// Index ///// */
+
+.indexDiv{
+  width: 100vw;
+  display:flex;
+}
+
+.toHome{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFFFF0;
+  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
+}
+
+/* ///// Index ///// */
+
+/* ///// Characters ///// */
+.characters{
+}
+/* ///// Characters ///// */
