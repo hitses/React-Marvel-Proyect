@@ -6,8 +6,6 @@ body {
   font-family: 'BenchNine', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 code {
@@ -61,9 +59,18 @@ li{
 
 .indexDiv{
   width: 100vw;
-  display:flex;
 }
 
+.pIndex{
+  text-align: center;
+}
+
+.imgIndex{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ///// Index ///// */
 
 /* ///// Characters ///// */
@@ -80,19 +87,32 @@ li{
   margin: 10px;
 }
 
+.nameCharacter{
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+}
+
 .characterImg{
   width: 300px;
 }
 /* ///// Character ///// */
 
-/* ///// Character ///// */
-.detailCharacter{
+/* ///// Detail Character ///// */
+.detailCharacterName{
+  text-align: center;
+  font-size: 2rem;
+  color: #000000
+}
+
+.detailCharacterImg{
   display: flex;
   justify-content: center;
+  height: 400px;
 }
-.nameCharacter{
-  font-size: 2rem;
-  color: #000000;
-  text-shadow: 0px 0px 10px rgba(255, 160, 1, 1);
+
+.detailCharacterDescription{
+  text-align: center;
 }
-/* ///// Character ///// */
+/* ///// Detail Character ///// */

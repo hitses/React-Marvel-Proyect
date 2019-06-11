@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Axios from 'axios';
 import {api_url, api_key, api_characters} from '../config';
 
-class Detail extends Component{
+class DetailCharacter extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -22,9 +22,12 @@ class Detail extends Component{
   render(){
     if(this.state.character){
       return <div className="detailCharacter">
-        <h1 className="nameCharacter">{this.state.character.name}</h1>
-        <img src={this.state.character.thumbnail.path + '.jpg'} alt={this.state.character.name}/>
-        <p>{this.state.character.description}</p>
+        <h1 className="detailCharacterName">{this.state.character.name}</h1>
+        <div className="detailCharacterImg">
+          <img src={this.state.character.thumbnail.path + '.jpg'} alt={this.state.character.name} className="detailCharacterImg"/>
+        </div>
+        <p className="detailCharacterDescription">{this.state.character.description}</p>
+        
       </div>
     } else{
       return <div>
@@ -34,4 +37,4 @@ class Detail extends Component{
   };
 };
 
-export default Detail;
+export default DetailCharacter;
