@@ -22,9 +22,11 @@ class DetailComic extends Component{
   render(){
     if(this.state.comic){
       return <div className="detailComic">
-        <h1 className="nameComic">{this.state.comic.name}</h1>
-        <img src={this.state.comic.thumbnail.path + '.jpg'} alt={this.state.comic.name}/>
-        <p>{this.state.comic.description}</p>
+        <h1 className="detailComicName">{this.state.comic.title}</h1>
+        <div className="detailComicImg">
+          <img className="detailComicImg" src={this.state.comic.thumbnail.path + '.' + this.state.comic.thumbnail.extension} alt={this.state.comic.name}/>
+        </div>
+        <p className="detailComicDescription">{this.state.comic.description}</p>
       </div>
     } else{
       return <div>

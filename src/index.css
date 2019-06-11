@@ -116,3 +116,48 @@ li{
   text-align: center;
 }
 /* ///// Detail Character ///// */
+
+/* ///// Comics ///// */
+.comics{
+  margin: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* ///// Comics ///// */
+
+/* ///// Comic ///// */
+.cardComic{
+  margin: 10px;
+}
+
+.comicName{
+  width: 100px;;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.comicImg{
+  width: 500px;
+}
+/* ///// Comic ///// */
+
+/* ///// Detail Comic ///// */
+.detailComicName{
+  text-align: center;
+  font-size: 2rem;
+  color: #000000
+}
+
+.detailComicImg{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.detailComicDescription{
+  text-align: center;
+}
+/* ///// Detail Comic ///// */

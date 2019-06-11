@@ -24,7 +24,7 @@ class DetailCharacter extends Component{
       return <div className="detailCharacter">
         <h1 className="detailCharacterName">{this.state.character.name}</h1>
         <div className="detailCharacterImg">
-          <img src={this.state.character.thumbnail.path + '.jpg'} alt={this.state.character.name} className="detailCharacterImg"/>
+          <img src={this.state.character.thumbnail.path + '.' + this.state.character.thumbnail.extension} alt={this.state.character.name} className="detailCharacterImg"/>
         </div>
         <p className="detailCharacterDescription">{this.state.character.description}</p>
         
